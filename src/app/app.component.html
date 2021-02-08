@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div *ngIf="hide" class="row mt-5">
+  <div  class="row mt-5">
       
     <div *ngIf="error" class="alert alert-danger">
       Sorry We Don't ahve that much seat available please book some less seats
@@ -13,25 +13,324 @@
           <h5 class="card-title">Available Seats</h5>
           <p class="card-text">Oh! You are Still waiting book fast and enjoy the journey</p>
           <span class="available" >
-              {{ 80 - seatsAlreadyBooked }}
+              {{ seatsAlreadyBooked }}
             </span>
         </div>
       </div>
     </div>
 
     <!-- Card To Show How Much Seats are filled in Form OF Chip -->
-    <div class="col-md-6">
+    <div class="col-md-5">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Booked Seats</h5>
-          <div style="list-style:none;" *ngFor="let a of fakeArray; let index = index" class="palette m-1"
-            [ngStyle]="{'background-color':index+1 <= seatsAlreadyBooked ? 'red' : 'skyblue' }">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 7 ? 'red' : 'skyblue' }">
+                  1
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 6 ? 'red' : 'skyblue' }">
+                  2
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 5 ? 'red' : 'skyblue' }">
+                  3
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 4 ? 'red' : 'skyblue' }">
+                  4
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 3 ? 'red' : 'skyblue' }">
+                  5
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 2 ? 'red' : 'skyblue' }">
+                  6
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row1 < 1 ? 'red' : 'skyblue' }">
+                  7
+                </div>
+              </div>
+            </div>
 
-            <div>
-              {{ index + 1 }}
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row2 < 7 ? 'red' : 'skyblue' }">
+                  8
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row2 < 6 ? 'red' : 'skyblue' }">
+                  9
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row2 < 5 ? 'red' : 'skyblue' }">
+                  10
+                </div>
+                <div class="palette m-1"[ngStyle]="{'background-color':row2 < 4 ? 'red' : 'skyblue' }">
+                  11
+                </div>
+                <div class="palette m-1"[ngStyle]="{'background-color':row2 < 3 ? 'red' : 'skyblue' }">
+                  12
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row2 < 2 ? 'red' : 'skyblue' }">
+                  13
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row2 < 1 ? 'red' : 'skyblue' }">
+                  14
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 7 ? 'red' : 'skyblue' }">
+                  15
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 6 ? 'red' : 'skyblue' }">
+                  16
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 5 ? 'red' : 'skyblue' }">
+                  17
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 4 ? 'red' : 'skyblue' }">
+                  18
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 3 ? 'red' : 'skyblue' }">
+                  19
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 2 ? 'red' : 'skyblue' }">
+                  20
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row3 < 1 ? 'red' : 'skyblue' }">
+                  21
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 7 ? 'red' : 'skyblue' }">
+                  22
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 6 ? 'red' : 'skyblue' }">
+                  23
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 5 ? 'red' : 'skyblue' }">
+                  24
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 4 ? 'red' : 'skyblue' }">
+                  25
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 3 ? 'red' : 'skyblue' }">
+                  26
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 2 ? 'red' : 'skyblue' }">
+                  27
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row4 < 1 ? 'red' : 'skyblue' }">
+                  28
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 7 ? 'red' : 'skyblue' }">
+                  29
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 6 ? 'red' : 'skyblue' }">
+                  30
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 5 ? 'red' : 'skyblue' }">
+                  31
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 4 ? 'red' : 'skyblue' }">
+                  32
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 3 ? 'red' : 'skyblue' }">
+                  33
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 2 ? 'red' : 'skyblue' }">
+                  34
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row5 < 1 ? 'red' : 'skyblue' }">
+                  35
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 7 ? 'red' : 'skyblue' }">
+                  36
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 6 ? 'red' : 'skyblue' }">
+                  37
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 5 ? 'red' : 'skyblue' }">
+                  38
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 4 ? 'red' : 'skyblue' }">
+                  39
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 3 ? 'red' : 'skyblue' }">
+                  40
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 2 ? 'red' : 'skyblue' }">
+                  41
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row6 < 1 ? 'red' : 'skyblue' }">
+                  42
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 7 ? 'red' : 'skyblue' }">
+                  43
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 6 ? 'red' : 'skyblue' }">
+                  44
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 5 ? 'red' : 'skyblue' }">
+                  45
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 4 ? 'red' : 'skyblue' }">
+                  46
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 3 ? 'red' : 'skyblue' }">
+                  47
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 2 ? 'red' : 'skyblue' }">
+                  48
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row7 < 1 ? 'red' : 'skyblue' }">
+                  49
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 7 ? 'red' : 'skyblue' }">
+                  50
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 6 ? 'red' : 'skyblue' }">
+                  51
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 5 ? 'red' : 'skyblue' }">
+                  52
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 4 ? 'red' : 'skyblue' }">
+                  53
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 3 ? 'red' : 'skyblue' }">
+                  54
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 2 ? 'red' : 'skyblue' }">
+                  55
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row8 < 1 ? 'red' : 'skyblue' }">
+                  56
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 7 ? 'red' : 'skyblue' }">
+                  57
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 6 ? 'red' : 'skyblue' }">
+                  58
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 5 ? 'red' : 'skyblue' }">
+                  59
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 4 ? 'red' : 'skyblue' }">
+                  60
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 3 ? 'red' : 'skyblue' }">
+                  61
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 2 ? 'red' : 'skyblue' }">
+                  62
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row9 < 1 ? 'red' : 'skyblue' }">
+                  63
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 7 ? 'red' : 'skyblue' }">
+                  64
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 6 ? 'red' : 'skyblue' }">
+                  65
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 5 ? 'red' : 'skyblue' }">
+                  66
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 4 ? 'red' : 'skyblue' }">
+                  67
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 3 ? 'red' : 'skyblue' }">
+                  68
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 2 ? 'red' : 'skyblue' }">
+                  69
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row10 < 1 ? 'red' : 'skyblue' }">
+                  70
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 7 ? 'red' : 'skyblue' }">
+                  71
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 6 ? 'red' : 'skyblue' }">
+                  72
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 5 ? 'red' : 'skyblue' }">
+                  73
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 4 ? 'red' : 'skyblue' }">
+                  74
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 3 ? 'red' : 'skyblue' }">
+                  75
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 2 ? 'red' : 'skyblue' }">
+                  76
+                </div>
+                <div class="palette m-1" [ngStyle]="{'background-color':row11 < 1 ? 'red' : 'skyblue' }">
+                  77
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div [ngStyle]="{'background-color':row12 < 3 ? 'red' : 'skyblue' }" class="palette m-1">
+                  78
+                </div>
+
+                <div [ngStyle]="{'background-color':row12 < 2 ? 'red' : 'skyblue' }" class="palette m-1">
+                  79
+                </div>
+
+                <div [ngStyle]="{'background-color':row12 < 1 ? 'red' : 'skyblue' }" class="palette m-1">
+                  80
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -56,27 +355,9 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-
-<!-- Card To Booking Deatils Of Seat Seats -->
-
-<div *ngIf="!hide"  class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Booked Seats Number</h5>
-          <p class="card-text">Please Take a ScreenShot or not it down</p>
-          <h3>From : {{ seatsAlreadyBooked+1 }}</h3>
-          <h3>To : {{ newSeatBooked }} </h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <button class="btn btn-lg btn-info m-4" (click)="goBack()">Back To Booking</button>
+    <div class="col-md-1">
+      <button class="btn btn-warning" (click)="reset()">RESET DATABASE TO Orignal</button>
     </div>
   </div>
 </div>

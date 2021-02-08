@@ -7,7 +7,7 @@ p {
   font-size: 20px;
 }
 
-div.palette {
+.palette {
   float: left;
   width: 40px;
   height: 40px;
@@ -21,4 +21,20 @@ div.palette {
 
 .red {
   background-color: red;
+}
+
+.box{
+  width: 37%;
+}
+
+@media(max-width: 764px){
+  .box{
+    width: 90%;
+  }
+}
+
+@media((min-width: 509px) and (max-width: 754px) ){
+  .box{
+    width: 40% !important;
+  }
 }
